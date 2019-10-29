@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "Hello Jenkins.">/tmp/jenkins-test.txt'
+                sh 'mvn --version'
             }
         }
     }
